@@ -5,7 +5,7 @@ search: exclude
 {
     'entries':
 [
-    {% for page in site.data.test_data | where:'country','Burkina Faso' %}
+    {{% for page in site.data.test_data | where:'country','Burkina Faso' %}}
     {
     'country'    : '{{ page.country }}',
     'project'    : '{{ page.project }}',
